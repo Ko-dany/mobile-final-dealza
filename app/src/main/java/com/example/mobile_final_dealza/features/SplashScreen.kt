@@ -13,7 +13,9 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.tooling.preview.Preview
 import com.example.mobile_final_dealza.R
+import com.example.mobile_final_dealza.ui.theme.MobilefinaldealzaTheme
 import kotlinx.coroutines.delay
 
 @Composable
@@ -31,5 +33,13 @@ fun SplashScreen(onTimeout: () -> Unit) {
         Column(horizontalAlignment = Alignment.CenterHorizontally) {
             Image(painterResource(R.drawable.logo), contentDescription = "Logo")
             Text( text = stringResource(id = R.string.app_name), color = MaterialTheme.colorScheme.onBackground, style = MaterialTheme.typography.headlineMedium) }
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun SplashScreenPreview(){
+    MobilefinaldealzaTheme {
+        SplashScreen({})
     }
 }
