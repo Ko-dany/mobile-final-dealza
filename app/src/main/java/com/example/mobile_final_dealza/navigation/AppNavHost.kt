@@ -16,7 +16,7 @@ fun DealNavHost(navController: androidx.navigation.NavHostController = rememberN
     val userViewModel: UserViewModel = viewModel()
 
     // NavHost for routing
-    NavHost(navController = navController, startDestination = "list", modifier = modifier) {
+    NavHost(navController = navController, startDestination = "splash_screen", modifier = modifier) {
 
         // Splash Screen
         composable(route = "splash_screen") {
