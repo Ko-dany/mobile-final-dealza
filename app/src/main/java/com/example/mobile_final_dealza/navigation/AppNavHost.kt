@@ -5,6 +5,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.mobile_final_dealza.features.AddEditScreen
 import com.example.mobile_final_dealza.features.HomeScreen
 import com.example.mobile_final_dealza.features.SplashScreen
 import com.example.mobile_final_dealza.viewmodel.DealViewModel
@@ -29,7 +30,8 @@ fun DealNavHost(navController: androidx.navigation.NavHostController = rememberN
         }
 
         composable(route = "home_screen") {
-            HomeScreen()
+//            HomeScreen()
+            AddEditScreen()
         }
 
 
